@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Card</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <section class="page-space">
+    <div class="container">
+      <div class="toggle-button d-flex justify-content-center align-items-center mb-4">
+        <span class="check-monthly me-2">Monthly</span>
+        <input type="checkbox" id="toggle-btn" >
+        <label for="toggle-btn"></label>
+        <span class="check-yearly ms-2">Yearly</span>
+    </div>
+    <div class="pricing-container pricing-slider d-lg-flex gap-3">
+        <div class="pricing-card basic-pricing-card item basic-card">
+            <span class="d-block pricing-category position-relative mb-3">Beginner</span>
+            <span class="d-block pricing-tagline mb-4">Suitable for small teams</span>
+            <div class="product-price">
+                <span class="dollar-sign">$</span>
+                <span class="price" id="beginner-amount">19</span>
+                <span class="price-duration">/month</span>
+            </div>
+            <a href="#" class="d-block text-center primary-cta" title="Buy Now" target="_blank" rel="noopener">Buy Now</a>
+            <div class="pricing-features-box mt-4">
+                <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                <div class="more-features">
+                  <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                  <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                  <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                  <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                  <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                </div>
+                <span class="view-more d-block position-relative text-center">View More</span>
+            </div>
+        </div>
+        <div class="pricing-card basic-pricing-card advance-card item">
+            <div class="d-flex justify-content-between align-items-center position-relative mb-3"><span class="pricing-category">Advance</span><span class="pricing-badge">Popular</span></div>
+            <span class="d-block pricing-tagline mb-4">Perfect for professionals</span>
+            <div class="product-price">
+                <span class="dollar-sign">$</span>
+                <span class="price" id="advance-amount">99</span>
+                <span class="price-duration">/month</span>
+            </div>
+            <a href="#" class="d-block text-center primary-cta" title="Buy Now" target="_blank" rel="noopener">Buy Now</a>
+            <div class="pricing-features-box mt-4">
+                <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                <div class="more-features">
+                    <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                    <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                    <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                    <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                    <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                    <p class="pricing-features position-relative">Lorem, ipsum dolor.</p>
+                </div>
+                <span class="view-more d-block position-relative text-center">View More</span>
+            </div>
+        </div>
+        <div class="pricing-card ultimate-pricing-card item">
+            <div class="d-flex justify-content-between align-items-center position-relative mb-3"><span class="pricing-category text-white">Ultimate</span><span class="pricing-badge">Suggested</span></div>
+            <span class="d-block pricing-tagline text-white mb-4">Excellent for experts</span>
+            <div class="product-price">
+                <span class="dollar-sign">$</span>
+                <span class="price text-white" id="ultimate-amount">199</span>
+                <span class="price-duration">/month</span>
+            </div>
+            <a href="#" class="d-block text-center primary-cta" title="Buy Now" target="_blank" rel="noopener">Buy Now</a>
+            <div class="pricing-features-box mt-4">
+                <p class="pricing-features position-relative text-white">Lorem, ipsum dolor.</p>
+                <p class="pricing-features position-relative text-white">Lorem, ipsum dolor.</p>
+                <p class="pricing-features position-relative text-white">Lorem, ipsum dolor.</p>
+                <p class="pricing-features position-relative text-white">Lorem, ipsum dolor.</p>
+                <p class="pricing-features position-relative text-white">Lorem, ipsum dolor.</p>
+                <div class="more-features">
+                    <p class="pricing-features position-relative text-white">Lorem, ipsum dolor.</p>
+                    <p class="pricing-features position-relative text-white">Lorem, ipsum dolor.</p>
+                    <p class="pricing-features position-relative text-white">Lorem, ipsum dolor.</p>
+                    <p class="pricing-features position-relative text-white">Lorem, ipsum dolor.</p>
+                    <p class="pricing-features position-relative text-white">Lorem, ipsum dolor.</p>
+                    <p class="pricing-features position-relative text-white">Lorem, ipsum dolor.</p>
+                </div>
+                <span class="view-more d-block text-center position-relative">View More</span>
+            </div>
+        </div>
+    </div>
+    </div>
+  </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+</html>
